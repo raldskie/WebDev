@@ -1,0 +1,236 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+user-select: none;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+.head{
+  position: absolute;
+  top: 100px;
+  font-size: 100px;
+  
+}
+.image {
+  width: 800px;
+  position: absolute;
+  top:50px;
+  left: 200px;
+  z-index:-1;
+    
+
+}
+
+.container{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  animation: animate 40s ease-in-out infinite;
+  background-size: cover;
+}
+
+.outer{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.3);
+}
+
+
+@keyframes animate {
+  0%,100%{
+    background-image: url('Pics/nvidia1.jpg');
+  }
+  15%{
+    background-image: url('Pics/amd1.jpg');
+  }
+  25%{
+    background-image: url('Pics/intro.jpg');
+  }
+  35%{
+    background-image: url('Pics/amd2.jpg');
+  }
+  45%{
+    background-image: url('Pics/Nvidia2.jpg');
+  }
+  55%{
+    background-image: url('Pics/amd3.jpg');
+  }
+  65%{
+    background-image: url('Pics/nvidia3.jpg');
+  }
+  75%{
+    background-image: url('Pics/amd4.jpg');
+  }
+  85%{
+    background-image: url('Pics/nvidia4.jpg');
+  }
+
+}
+.bg-img{
+  background: url('bg.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.bg-img:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%,-50%);
+  background: linear-gradient(0deg, rgba(217,135,188,1) 0%, rgba(173,74,255,1) 100%);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  border-radius: 20px;
+}
+.content header{
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.field span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.space{
+  margin-top: 16px;
+}
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.pass-key:valid ~ .show{
+  display: block;
+}
+.pass{
+  text-align: left;
+  margin: 10px 0;
+}
+.pass a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+.pass:hover a{
+  text-decoration: underline;
+}
+.field input[type="submit"]{
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.field input[type="submit"]:hover{
+  background: #2691d9;
+}
+.login{
+  color: white;
+  margin: 20px 0;
+  font-family: 'Poppins',sans-serif;
+}
+.links{
+  display: flex;
+  cursor: pointer;
+  color: white;
+  margin: 0 0 20px 0;
+}
+
+.members{
+  width: 300px;
+  height: 45px;
+  font-size: 20px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #E1306C;
+  border-radius: 1px;
+  border: 1px solid #3949AB;
+  transition: .5s;
+}
+.members:hover{
+  background: #3498db;
+}
+.members:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+span{
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.signup{
+  font-size: 15px;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+}
+.signup a{
+  color: #3498db;
+  text-decoration: none;
+}
+.signup a:hover{
+  text-decoration: underline;
+}
+

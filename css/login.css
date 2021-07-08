@@ -1,0 +1,416 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-family: sans-serif;
+}
+.head{
+	font-size: 100px;
+	
+}
+.image {
+  width: 800px;
+  position: absolute;
+  top:50px;
+  left: 200px;
+  z-index:-1;
+    
+
+}
+i{
+	float: right;
+	position: absolute;
+	bottom: 227px;
+	right: 55px;
+	cursor: pointer;
+	margin: 10px 2px;
+	font-size: 18px;
+}
+#hide{
+	display: none;
+}
+img{
+	position: relative;
+	left: 175px;
+	bottom: -40px;
+	 width: 100px;
+  	height: auto;
+}
+.container{
+	position: absolute;
+	top: 150px;
+	right: 10%;
+	width: 450px;
+	height: 600px;
+	background: linear-gradient(0deg, rgba(217,135,188,1) 0%, rgba(173,74,255,1) 100%);
+	border-radius: 20px;
+}
+.label{
+	position: relative;
+	left: 100px;
+	bottom: -20px;
+	font-size: 35px;
+	font-weight: bold;
+	color: black;
+}
+.login_form{
+	padding: 50px 40px;
+
+}
+.login_form .font{
+	font-size: 18px;
+	color: black;
+	
+}
+.login_form input{
+	height: 40px;
+	width: 350px;
+	
+	font-size: 18px;
+	outline: none;
+	border: 1px solid silver;
+}
+.paspas{
+	position: relative;
+	margin: 2px 0;
+	left: 145px;
+	font-weight: bold;
+
+}
+.far{
+	position: absolute;
+	left: 10px;
+}
+.button{
+
+	height: 45px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background: #3498db;
+	border-radius: 1px;
+	border: 1px solid #3949AB;
+	transition: .5s;
+}
+.button:hover{
+	background: #151c6a;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.forgot{
+	position: absolute;
+	bottom: 100px;
+	left: 210px;
+}
+.box{
+	position: absolute;
+	bottom: 100px;
+	left: 45px;
+}
+.button3{
+	margin: 40px 0 30px 0;
+	height: 45px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	padding: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	background: #E1306C;
+	border-radius: 10px;
+	transition: .5s;
+	position: relative;
+	left: 155px;
+    bottom: -5px;
+}
+.button3:hover{
+	background:#151c6a;
+}
+.button3:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.contact2{
+	position: absolute;
+	bottom:  223px;
+	left: 255px;
+}
+
+
+.modal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.check{
+	position: absolute;
+	top: 700px;
+}
+.close{
+	position: absolute;
+	top: 10px;
+	right: 14px;
+	font-size: 50px;
+	transform: rotate(45deg);
+	cursor: pointer;
+
+}
+
+.sign{
+	position: relative;
+	left: 140px;
+	bottom: 10px;		
+}
+
+.form{
+	background-image: linear-gradient(0deg, rgba(217,135,188,1) 0%, rgba(173,74,255,1) 100%);
+	width:450px;
+	height: 700px;
+	
+	 padding-left:50px; 
+	 padding-top:20px;
+	 position: absolute;
+	top: 150px;
+	right: 10%;
+	 border-radius: 20px;
+}
+.pss{
+	position: absolute;
+	bottom: 100px;
+}
+.form fieldset{
+	border:0px; padding:0px; margin:0px;
+}
+.form input[type="text"] { 
+	width: 400px; 
+}
+.form input[type="email"] {
+ width: 400px; 
+}
+.forminput[type="password"] { 
+	width: 400px;
+ }
+.form input.Day {
+	width:60px;
+}
+.form input.Year {
+	width:120px;
+}
+.form label { 
+	color: #000;
+	
+	 font-size: 15px;
+	 font-family:Arial, Helvetica; 
+}
+.form label.month { 
+	width: 135px;
+}
+.form input, textarea { 
+	background-color: rgba(255, 255, 255, 0.4);
+	border: 1px solid rgba(122, 192, 0, 0.15);
+	padding: 7px; 
+	font-family: Keffeesatz, Arial;
+ 	color: #4b4b4b; 
+	font-size: 14px; 
+	-webkit-border-radius: 5px; 
+	margin-bottom: 15px; margin-top: -10px; 
+}
+.form input:focus, textarea:focus{ 
+	border: 1px solid #ff5400; 
+	background-color: rgba(255, 255, 255, 1); 
+}
+.gender {
+  font-size: 18px;
+  color: #141823;
+  cursor: pointer;
+  padding: 0 10px 0 3px;
+  margin-right: 4px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+
+.spanpad {
+  padding: 5px 0 5px 4px;
+  display: inline-block;
+}
+
+.mt1 {
+  margin-top:15px;
+}
+
+.m0 {
+  margin: 0;
+}
+form p.contact { 
+	font-size: 10px; 
+	margin:0px 0px 10px 0;
+}
+.contact{
+	font-weight: bold;
+}.cpass_txt{
+	position: absolute;
+	bottom: 190px;
+	left: 266px;
+	font-weight: bold;
+}
+.cpass{
+	position: absolute;
+	bottom: 139px;
+	left: 264px;
+}
+.phonum{
+	position: absolute;
+
+}.
+.fields{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.fields{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.fields{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.fields span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.fields input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.space{
+  margin-top: 16px;
+}
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.pass-key:valid ~ .show{
+  display: block;
+}
+.pass{
+  text-align: left;
+  margin: 10px 0;
+}
+.pass a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+.pass:hover a{
+  text-decoration: underline;
+}
+.fields input[type="submit"]{
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.fields input[type="submit"]:hover{
+  background: #2691d9;
+}
+.login{
+  color: white;
+  margin: 20px 0;
+  font-family: 'Poppins',sans-serif;
+}
+.links{
+  display: flex;
+  cursor: pointer;
+  color: white;
+  margin: 0 0 20px 0;
+}
+.facebook,.instagram{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 10px;
+}
+.facebook{
+  margin-left: 0;
+  background: #4267B2;
+  border: 1px solid #3e61a8;
+}
+.instagram{
+  background: #E1306C;
+  border: 1px solid #df2060;
+
+}
+.facebook:hover{
+  background: #3e61a8;
+}
+.instagram:hover{
+  background: #df2060;
+}
+
+.facebook a{text-decoration: none;
+color: white;}
+}
+span{
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.signup{
+  font-size: 15px;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+}
+.signup a{
+  color: #3498db;
+  text-decoration: none;
+}
+.signup a:hover{
+  text-decoration: underline;
+}
